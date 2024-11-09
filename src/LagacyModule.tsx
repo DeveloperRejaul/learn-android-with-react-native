@@ -9,16 +9,16 @@ export default function LegacyModule() {
         const subscription = DeviceEventEmitter.addListener('EventReminder', (event) => {
           console.log('Received event:', event);
         });
-    
+
         // Clean up the event listener on component unmount
         return () => {
           subscription.remove();
         };
       }, []);
-    
+
       const triggerNativeEvent = () => {
         // Call the emitEvent function from the native module
-        ToastModule.emitEvent("Hello World");
+        ToastModule.emitEvent('Hello World');
       };
 
 
@@ -41,9 +41,9 @@ export default function LegacyModule() {
     const handleCallbackWithError = () => {
         ToastModule.callbackFunction('hello', 'hello world', (err, event)=> {
             if(err){
-                 console.log(err)
-                 return 
-            };
+                 console.log(err);
+                 return;
+            }
            console.log(event);
         });
    };
@@ -51,16 +51,16 @@ export default function LegacyModule() {
      const handleTwoCallback = () => {
         ToastModule.twoCallbackFunction('hello', 'hello world', (error)=> {
             if(error){
-                 console.log("error", error);
-            };
+                 console.log('error', error);
+            }
         },
         (success)=> {
-            console.log("success", success);
+            console.log('success', success);
         }
     );
    };
 
-   
+
 
   return (
     <View style={{
@@ -84,7 +84,7 @@ export default function LegacyModule() {
       style={{textAlign:'center'}}>
         Press LegacyModule Callback
     </Text>
-    
+
     <Text
       onPress={handleCallbackWithError}
       style={{textAlign:'center'}}>
