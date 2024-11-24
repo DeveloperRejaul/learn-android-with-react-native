@@ -12,6 +12,7 @@ import com.facebook.react.defaults.DefaultReactNativeHost
 import com.facebook.react.soloader.OpenSourceMergedSoMapping
 import com.facebook.soloader.SoLoader
 import com.nativelocalstorage.NativeLocalStoragePackage
+import com.webview.ReactWebViewPackage
 
 class MainApplication : Application(), ReactApplication {
 
@@ -23,6 +24,8 @@ class MainApplication : Application(), ReactApplication {
               // add(MyReactNativePackage())
                 add(NativeLocalStoragePackage()) // add turbo module
                 add(ToastPackage()) // add legacy module
+                add(ReactWebViewPackage()) // ADD TURBO VIEW
+                add(CustomModulePackage()) // Add legacy view
             }
 
         override fun getJSMainModuleName(): String = "index"

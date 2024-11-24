@@ -1,0 +1,8 @@
+  "codegenConfig": {
+     "name": "NativeLocalStorageSpec",
+     "type": "modules",
+     "jsSrcsDir": "specs",
+     "android": {
+       "javaPackageName": "com.nativelocalstorage"
+     }
+   },

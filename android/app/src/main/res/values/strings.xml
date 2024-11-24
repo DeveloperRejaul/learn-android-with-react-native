@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LearnAndroidWithReactNative</string>
+    <string name="default_text">hello World</string>
 </resources>

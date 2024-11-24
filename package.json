@@ -33,9 +33,9 @@
     "react-test-renderer": "18.3.1",
     "typescript": "5.0.4"
   },
-  "codegenConfig": {
-     "name": "NativeLocalStorageSpec",
-     "type": "modules",
+"codegenConfig": {
+     "name": "AppSpec",
+     "type": "components",
      "jsSrcsDir": "specs",
      "android": {
        "javaPackageName": "com.nativelocalstorage"
