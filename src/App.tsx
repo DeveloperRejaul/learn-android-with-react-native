@@ -1,10 +1,10 @@
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import TurboModule from './TurboModule';
 import LegacyModule from './LegacyModule';
 import TurboView from './TurboView';
 import LegacyCustomTextView from './LegacyView';
-import XmlCustomFragmentView from './XmlView';
+import TextEditor from './TextEditor'
 
 export default function App() {
   return (
@@ -13,7 +13,8 @@ export default function App() {
      {/* <LegacyModule/> */}
      {/* <TurboView/> */}
      {/* <LegacyCustomTextView/> */}
-     <XmlCustomFragmentView/>
+     <Text>Hello World</Text>
+     <TextEditor/>
     </View>
   );
 }

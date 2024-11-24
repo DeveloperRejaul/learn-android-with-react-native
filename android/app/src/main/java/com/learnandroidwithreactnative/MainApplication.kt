@@ -26,6 +26,8 @@ class MainApplication : Application(), ReactApplication {
                 add(ToastPackage()) // add legacy module
                 add(ReactWebViewPackage()) // ADD TURBO VIEW
                 add(CustomModulePackage()) // Add legacy view
+
+                add(RichEditorPackage()) // add text editor android library
             }
 
         override fun getJSMainModuleName(): String = "index"
